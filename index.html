@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saathi Safety | Help is just two taps away</title>
+  <meta name="description" content="At Saathi, we are building a reliable companion that will always be there when you need help. Instant emergency safety with two discreet taps.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================
+       TOP FLOATING NAVIGATION
+  ========================================= -->
+  <header class="site-header">
+    <div class="header-container">
+      
+      <!-- Left Pill: Brand Logo -->
+      <a href="#hero" class="logo-pill" aria-label="Saathi Safety Home">
+        <img src="logo.png" alt="Saathi Logo" class="logo-icon">
+      </a>
+
+      <!-- Right Pill: Brand Name + Navigation Links -->
+      <div class="main-nav-pill">
+        <a href="#hero" class="brand-text" aria-label="Saathi Safety">
+          <img src="brand-text.png" alt="Saathi Safety" class="brand-text-img">
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#product" class="nav-link">Product</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#product" class="nav-link">Product</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <!-- =========================================
+       HERO SECTION
+  ========================================= -->
+  <section class="hero-section" id="hero">
+    
+    <!-- Background Image & Vignette Gradient Overlay -->
+    <div class="hero-bg-wrapper">
+      <img src="img.png" alt="Saathi Safety Community" class="hero-bg-img">
+      <div class="hero-overlay-gradient"></div>
+    </div>
+
+    <div class="hero-container">
+      
+      <!-- Left Content Column -->
+      <div class="hero-left">
+        
+        <div class="hero-headline-group">
+          <h1 class="hero-title">Help is just two taps away</h1>
+          <p class="hero-subtitle">right there, exactly when you need it</p>
+        </div>
+
+        <!-- Waitlist Signup Area -->
+        <div class="waitlist-container">
+          <label for="waitlistEmail" class="waitlist-label">Sign up for the waitlist:</label>
+          <form class="waitlist-form" id="waitlistForm" novalidate>
+            <div class="waitlist-input-wrapper">
+              <input 
+                type="email" 
+                id="waitlistEmail" 
+                class="waitlist-input" 
+                placeholder="Enter your email......" 
+                required 
+                autocomplete="email"
+                aria-label="Email address for waitlist"
+              >
+            </div>
+            <button type="submit" class="waitlist-submit-btn" aria-label="Submit Waitlist Email">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </button>
+          </form>
+          <div class="form-feedback" id="formFeedback" role="status"></div>
+        </div>
+
+        <!-- Mission Tagline -->
+        <div class="hero-tagline">
+          <p class="hero-tagline-text">
+            At Saathi, we are building a reliable companion that will always be there when you need help
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right Content Column: Exploded CAD Prototype -->
+      <div class="hero-right">
+        <div class="prototype-card">
+          <div class="prototype-img-container">
+            <img src="product_insides.png" alt="Saathi Safety Hardware Prototype Exploded View" class="prototype-img" id="prototypeImg">
+          </div>
+          <a href="#product" class="prototype-caption" style="text-decoration: none;">Our prototype</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================
+       ABOUT SECTION
+  ========================================= -->
+  <section class="section section-dark" id="about">
+    <div class="container">
+      <div class="section-badge">Why Saathi</div>
+      <h2 class="section-title">Safety designed for how panic actually feels.</h2>
+      <p class="section-description">
+        In an emergency, every millisecond matters. Fumbling into a bag, unlocking a smartphone with face recognition, or navigating through apps is practically impossible under extreme stress. Saathi replaces complex digital steps with one instinctual physical action.
+      </p>
+
+      <div class="features-grid">
+        
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" />
+            </svg>
+          </div>
+          <h3>Two-Tap Discretion</h3>
+          <p>
+            A deliberate double-press prevents accidental bumps in your bag or pocket while giving you instant covert activation without looking down or alerting bystanders.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+          </div>
+          <h3>Silent Confirmation</h3>
+          <p>
+            A subtle, gentle haptic pulse lets you know your distress signal and live GPS coordinates have been sent to your guardian network without making a sound.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.199l-.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+          </div>
+          <h3>Your Circle in Sync</h3>
+          <p>
+            Instantly alerts your pre-configured family, friends, or campus security with your real-time pinned route, battery level, and ambient situational updates.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       PRODUCT SECTION: EXPLODED VIEW BREAKDOWN
+  ========================================= -->
+  <section class="section section-accent" id="product">
+    <div class="container">
+      <div class="section-badge">Hardware Architecture</div>
+      <h2 class="section-title">Engineered to be compact, robust, and dependable.</h2>
+      <p class="section-description">
+        Every millimeter of Saathi has been engineered to withstand everyday wear and tear while delivering flawless responsiveness when it counts most.
+      </p>
+
+      <div class="product-breakdown-wrapper">
+        
+        <!-- Left: Interactive Exploded Layers -->
+        <div class="product-layers-list">
+          
+          <div class="layer-item active" data-layer="top">
+            <div class="layer-num">1</div>
+            <div class="layer-content">
+              <h4>Ergonomic Top Enclosure</h4>
+              <p>Molded from impact-resistant polycarbonate with smooth chamfered edges for seamless pocket insertion and snag-free carrying.</p>
+            </div>
+          </div>
+
+          <div class="layer-item" data-layer="battery">
+            <div class="layer-num">2</div>
+            <div class="layer-content">
+              <h4>High-Density LiPo Battery Cell</h4>
+              <p>Ultra-compact custom rechargeable cell engineered for up to 6 months standby battery life with intelligent low-power sleep modes.</p>
+            </div>
+          </div>
+
+          <div class="layer-item" data-layer="switch">
+            <div class="layer-num">3</div>
+            <div class="layer-content">
+              <h4>Precision Tactile Emergency Switch</h4>
+              <p>Calibrated actuation force ensuring a crisp, tactile double-click confirmation that prevents accidental pocket presses.</p>
+            </div>
+          </div>
+
+          <div class="layer-item" data-layer="pcb">
+            <div class="layer-num">4</div>
+            <div class="layer-content">
+              <h4>Low-Power Microcontroller & USB-C Port</h4>
+              <p>High-efficiency BLE 5.3 architecture with universal Type-C fast recharge, firmware encryption, and instant pairing.</p>
+            </div>
+          </div>
+
+          <div class="layer-item" data-layer="base">
+            <div class="layer-num">5</div>
+            <div class="layer-content">
+              <h4>Reinforced Chassis & Keyring Slot</h4>
+              <p>3D-prototyped durable unibody cradle with integrated strap loop to effortlessly attach to keys, backpacks, or lanyards.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Prototype View -->
+        <div class="hero-right">
+          <div class="prototype-card">
+            <div class="prototype-img-container">
+              <img src="product_insides.png" alt="Hardware Exploded View" class="prototype-img">
+            </div>
+            <span class="prototype-caption">Interactive Prototype Architecture</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       CONTACT & FAQ SECTION
+  ========================================= -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-badge">Get In Touch</div>
+      <h2 class="section-title">Frequently Asked Questions & Contact</h2>
+      <p class="section-description">
+        Have questions about Saathi Safety or interested in campus partnerships? We'd love to hear from you.
+      </p>
+
+      <div class="faq-grid">
+        
+        <!-- Left: FAQ Accordion -->
+        <div class="accordion-list">
+          
+          <div class="accordion-item active">
+            <button class="accordion-header">
+              How does the two-tap mechanism prevent accidental alerts?
+              <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body" style="max-height: 140px;">
+              <p>
+                Our firmware requires two distinct, firm presses within an 800ms window. A single bump or continuous compression in a tight pocket or bag will not trigger an alert.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Does Saathi need my phone to be nearby?
+              <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Saathi connects seamlessly via ultra-low-power Bluetooth to your smartphone. Your phone can stay zipped inside your backpack or pocket—even locked with screen off—and will automatically relay the SOS broadcast and GPS location.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              How long does the battery last?
+              <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Under normal everyday carry, the high-density LiPo cell lasts up to 6 months per charge. It recharges via standard USB-C in under 45 minutes, and our companion app notifies you when battery dips below 20%.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              When will the first batch ship?
+              <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <p>
+                We are currently concluding pilot testing of our functional prototypes. Waitlist members will receive priority access and exclusive early-supporter discounts when production pre-orders launch.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-card">
+          <h3>Send Us a Message</h3>
+          <p>Partner inquiries, student campus pilots, or general questions.</p>
+          
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="jane@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+            <div id="contactFeedback" style="margin-top: 14px; font-size: 0.9rem;"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       LAST PAGE / OUTRO FINALE
+  ========================================= -->
+  <section class="closing-section" id="closing">
+    <div class="closing-container">
+      <img src="saathi_white_lockup.png" alt="Saathi Safety" class="closing-lockup-img">
+    </div>
+    <a href="#hero" class="closing-back-to-top" aria-label="Back to top">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+      </svg>
+      Back to Top
+    </a>
+  </section>
+
+  <!-- =========================================
+       FOOTER
+  ========================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo-box">
+            <img src="logo.png" alt="Saathi Logo">
+          </div>
+          <img src="brand-text.png" alt="Saathi Safety" class="footer-brand-img">
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Saathi Safety Technologies Inc. All rights reserved.</p>
+        <p>Built with care for everyday peace of mind.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================
+       CONFIRMATION MODAL
+  ========================================= -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">&times;</button>
+      <div class="modal-icon">
+        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <h3>You're on the waitlist!</h3>
+      <p>
+        Thank you for believing in Saathi. We've reserved spot <strong id="queueNumberDisplay">#247</strong> for <strong id="userEmailDisplay" style="color: #ffffff;">you</strong>. We will notify you the moment early-bird batches become available.
+      </p>
+      <button class="modal-btn" id="modalBtn">Got it, thank you!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
